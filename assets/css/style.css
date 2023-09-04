@@ -48,6 +48,7 @@ html {
 	display: inline-block;
 	margin-top: 15px;
 	border: none;
+	text-align: center;
 }
 
 .btn:hover {
@@ -91,6 +92,10 @@ html {
 
 .mt-16 {
 	margin-top: 16px !important;
+}
+
+.mt-32 {
+	margin-top: 32px;
 }
 /* Main */
 #main {
@@ -166,16 +171,33 @@ html {
 	font-size: 14px;
 }
 
+#header .mobile-menu-btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: none;
+}
+
+#header .mobile-menu-btn,
 #header .search-btn {
 	float: right;
 	padding: 0 21px;
 }
 
 #header .search-btn:hover {
-	background-color: #f43364;
 	cursor: pointer;
+	background-color: #f43364;
 }
 
+#header .mobile-menu-btn:hover {
+	background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon {
+	color: #000;
+}
+
+#header .menu-icon,
 #header .search-icon {
 	color: #fff;
 	font-size: 16px;
@@ -186,7 +208,7 @@ html {
 	position: relative;
 	margin-top: 46px;
 	padding-top: 50%; /* 50% chiều ngang của chính nó*/
-	background: url('/assets/img/slider/slider2.jpg') top center / cover no-repeat;
+	background: url('/assets/img/slider/slider3.jpg') top center / cover no-repeat;
 }
 
 #slider .text-content {
@@ -214,9 +236,12 @@ html {
 
 #content .content-section {
 	width: 800px;
+	max-width: 100%;
 	padding: 64px 0 112px;
 	margin-left: auto;
 	margin-right: auto;
+	padding-left: 16px;
+	padding-right: 16px;
 }
 
 #content .section-heading {
@@ -242,11 +267,8 @@ html {
 }
 
 #content .members-list {
-	margin-top: 47px;
+	margin-top: 32px;
 	/* overflow: hidden; */
-}
-#content .member-item {
-	text-align: center;
 }
 
 #content .member-name {
@@ -298,7 +320,7 @@ html {
 
 /* Places section */
 .places-list {
-	margin-top: 32px;
+	margin-top: 16px;
 }
 
 .place-img {
@@ -337,12 +359,21 @@ html {
 
 .contact-info {
 	font-size: 18px;
-	line-height: 1.4;
+	line-height: 1.5;
 }
 
 .contact-info i[class*='ti-'] {
 	width: 30px;
 	display: inline-block;
+}
+
+.contact-info a {
+	color: #101aef;
+	opacity: 0.8;
+}
+
+.contact-info a:hover {
+	opacity: 1;
 }
 
 .contact-form {
@@ -365,11 +396,11 @@ html {
 	text-align: center;
 }
 
-#footer .social-list {
+#footer .socials-list {
 	font-size: 20px;
 }
 
-#footer .social-list a {
+#footer .socials-list a {
 	color: rgba(0, 0, 0, 0.6);
 	text-decoration: none;
 }
