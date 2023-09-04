@@ -14,10 +14,15 @@
 
 	.contact-form .form-control {
 		padding: 15px;
+		font-style: 16px;
 	}
 
 	.contact-info {
 		line-height: 2;
+	}
+
+	.contact-submit-btn {
+		font-style: 17px;
 	}
 
 	.socials-list {
